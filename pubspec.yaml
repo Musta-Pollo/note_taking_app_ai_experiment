@@ -1,0 +1,145 @@
+name: note_taking_app
+description: "Flutter notes app with real-time sync using Supabase and Drift"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  custom_sync_drift_annotations:
+    git:
+      url: https://github.com/Musta-Pollo/custom_sync_drift_annotations.git
+      ref: 34143f54cadd89ee4ed6daed336737e155bb8e7a
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.3.5
+  flutter_hooks: ^0.20.5
+  hooks_riverpod: ^2.6.1
+
+  # Database & Sync
+  drift: ^2.28.1
+  sqlite3_flutter_libs: ^0.5.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+
+  # Supabase Integration
+  supabase_flutter: ^2.8.0
+  supabase_auth_ui: ^0.5.5
+
+  # AppFlowy Editor
+  appflowy_editor: ^5.1.0
+  appflowy_editor_sync_plugin:
+    git:
+      url: https://github.com/Musta-Pollo/appflowy_editor_sync_plugin.git
+      ref: 9ee97a44e3223fd2bfb4ddca433d87ef3f77d15e
+
+  # Additional dependencies for sync
+  rxdart: ^0.28.0
+  nanoid: ^1.0.0
+  shared_preferences: ^2.3.0
+  google_fonts: ^6.2.1
+  flutter_dotenv: ^5.2.1
+  adaptive_theme: ^3.7.0
+  universal_platform: ^1.1.0
+  internet_connection_checker_plus: ^2.7.1
+
+  # UI & Navigation
+  auto_route: ^10.1.0+1
+  flutter_login: ^5.1.0
+  flex_color_scheme: ^8.2.1-dev.2
+
+  # Domain Models
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+  uuid: ^4.5.1
+  equatable: ^2.0.5
+
+  cupertino_icons: ^1.0.8
+  easy_debounce: ^2.0.3
+  share_plus: ^10.1.2
+  timeago: ^3.6.1
+  gap: ^3.0.1
+  pin_code_fields: ^8.0.1
+  form_validation: ^3.2.0
+
+# Dependency overrides
+dependency_overrides:
+  libphonenumber_plugin:
+    git:
+      url: https://github.com/juliansteenbakker/plugin_libphonenumber.git
+      ref: 3fa2d7c3ebefaecbe4c89183355075ab823a6007
+      path: libphonenumber_plugin
+  analyzer_plugin: ^0.13.1 # Force fixed version with publiclyExporting typo fix
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  sqlite3: ^2.7.5
+  mocktail: ^1.0.4
+  # Note: Generator should be included with the main plugin
+
+  freezed: ^2.5.7
+  flutter_lints: ^6.0.0
+  drift_dev: 2.28.0
+  build_runner: ^2.4.12
+  auto_route_generator: ^10.1.0
+  riverpod_generator: ^2.4.3
+  json_serializable: ^6.8.0
+  integration_test:
+    sdk: flutter
+
+  riverpod_lint: ^2.6.4
+
+  custom_sync_drift_generator:
+    git:
+      url: https://github.com/Musta-Pollo/custom_sync_drift_generator.git
+      ref: 8ab57f14ff8c00d148ff396fe01543fde3bcbce0
+  custom_lint: ^0.7.3
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - .env
+    # - images/a_dot_burr.jpeg
+    # - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
