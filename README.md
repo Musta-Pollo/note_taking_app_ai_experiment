@@ -52,8 +52,7 @@ These issues would require significant refactoring time, making AI counterproduc
 
 ## My Development Practices (AI Struggled to Follow)
 
-I tried to implement these practices throughout the project, but AI had difficulty maintaining consistency. I partially rewrote the home_page section to demonstrate these patterns, though AI made it messy again after iterations.
-
+I tried to implement these practices throughout the project, but AI had difficulty maintaining consistency.
 ### Preferred Patterns:
 
 - **Global Constants**: Using a central constants file for borderRadius, fontSize, spacings throughout the application
@@ -62,7 +61,7 @@ I tried to implement these practices throughout the project, but AI had difficul
 - **Proper Component Hierarchy**: Keeping components at the appropriate abstraction level where they're used
 - **Feature-Based Organization**: Splitting code into clear feature boundaries
 
-It is hard to propagate these changes to an existing AI generated files. This example focused on making the home_page and dialogues for notes feature into a correct shape. It improved a lot from the form that the AI made it, after many iterations with a hope of improving it. But still its not using constants thoughout.
+It is hard to propagate these changes to an existing AI generated files. This example focused on making the home_page and dialogues for notes feature into a correct shape. It improved a lot from the form that the AI made it, after many iterations. But still its not using constants thoughout.
 
 ## Architectural Experiments (What Didn't Work)
 
@@ -110,13 +109,6 @@ Watch the app in action with real-time sync and CRDT-based document editing:
   </video>
 </div>
 
-### Key Features Demonstrated:
-
-- **Category Management**: Organize notes into custom categories
-- **Simple & Rich Notes**: Support for both plain text and rich document editing
-- **Real-time Sync**: Changes propagate across devices instantly
-- **Offline Support**: Works seamlessly without internet connection
-- **CRDT Integration**: Conflict-free collaborative editing for rich documents
 
 ## Key Learnings & Recommendations
 
