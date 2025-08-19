@@ -100,7 +100,6 @@ The app demonstrates a clean, intuitive interface for note-taking with real-time
 
 ### Demo Video
 
-Watch the app in action with real-time sync and CRDT-based document editing:
 
 <div align="center">
   <video width="400" controls>
